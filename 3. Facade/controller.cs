@@ -1,0 +1,15 @@
+public class controller
+{
+	private CarSystem m_carSystem = null;	
+	private ShipSystem m_shipSystem = null;	
+
+	public controller(){
+		m_carSystem = new CarSystem();
+		m_shipSystem = new ShipSystem();
+	}
+	
+	public void update(){
+		m_carSystem.Update();
+		m_shipSystem.Update();
+	}
+}
