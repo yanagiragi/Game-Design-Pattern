@@ -5,6 +5,11 @@ public abstract class Abs_GameSystem
 	public Abs_GameSystem(GameSystem g){
 		m_instance = g;
 	}
+
+	public void doSomeThing()
+	{
+		// do something
+	}
 }
 
 public class GameSystem
@@ -29,5 +34,6 @@ public class CarSystem : Abs_GameSystem
 
 	public void update(){
 		m_instance.update();
+		g.doSomeThing();
 	}
 }
