@@ -17,9 +17,11 @@
     
     It is said that the second way is better due to:
 
-    1. Obviously State Object gets more clearly in what condition it should change to next state , for that we can't calm conditions and what's the state will transformed to only in 'State'.
+    1. Obviously State Object gets more clearly in what condition it should change to next state,
+    for that we can't calm conditions and what's the state will transformed to only in 'State'.
 
-    2. Each 'ConcreteState' are allow to have it's unique value, which is reference to changing state or not, since that it is better to store those values in class their belong.
+    2. Each 'ConcreteState' are allow to have it's unique value, which is reference to changing 
+    state or not, since that it is better to store those values in class their belong.
 
     3. Since conditions and values are store in 'ConcreteState', the size of 'Context' can be minimized.
     
